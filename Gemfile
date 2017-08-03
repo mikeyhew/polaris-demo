@@ -56,3 +56,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'activeresource', github: 'rails/activeresource'
 gem 'shopify_api', '~> 4.9'
 gem 'shopify_app', '~> 7.2'
+gem 'dotenv-rails', ['>= 2.2.1', '< 3.0']
