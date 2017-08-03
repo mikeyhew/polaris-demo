@@ -1,6 +1,6 @@
 class EmbeddedAppController < ShopifyApp::AuthenticatedController
 
   def index
-    render plain: "Welcome to my app!"
+    render layout: false
   end
 end
