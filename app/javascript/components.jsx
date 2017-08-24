@@ -1,7 +1,7 @@
 import React from 'react'
 import {Page, Layout, Card, Button} from '@shopify/polaris'
 import {EmbeddedApp} from '@shopify/polaris/embedded'
-import {BrowserRouter, Route, Link} from 'react-router-dom'
+import {BrowserRouter, Route, Link, Redirect} from 'react-router-dom'
 
 const {apiKey, shopOrigin, debug} = appConfig
 
@@ -39,6 +39,9 @@ const App = () => (
       <div>
         <Route exact path="/" component={Home} />
         <Route path="/orders" component={OrdersPage} />
+        <Route path="/embedded">
+          <Redirect to="/" />
+        </Route>
       </div>
     </BrowserRouter>
   </EmbeddedApp>
