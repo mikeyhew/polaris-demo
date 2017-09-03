@@ -25,9 +25,9 @@ development:
   <<: *default
 
   dev_server:
-    host: 0.0.0.0
+    host: localhost
     port: 8080
-    https: false
+    https: true
 
 test:
   <<: *default
