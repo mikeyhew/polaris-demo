@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://sdks.shopifycdn.com/polaris/1.2.1/polaris.min.css">
     <%= stylesheet_link_tag 'application' %>
     <%= csrf_meta_tags %>
+    <% if Rails.env.development? %>
+        <script src="https://localhost:8097"></script>
+    <% end %>
     <script>
       window.appConfig = {
         apiKey: "<%= j ShopifyApp.configuration.api_key %>",
